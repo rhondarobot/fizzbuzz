@@ -6,11 +6,14 @@ $(document).ready(function() {
  if (newItem === "") {
         alert("Please enter an item first!") 
   } else if (newItem % 3 === 0 && newItem % 5 === 0) {
-     $('ul').append('<li>' + 'fizzbuzz' + '</li>');    
+     $('ul').append('<li>' + 'fizzbuzz' + '</li>'); 
+     $('#inputNumber').val('');   
   } else if (newItem % 3 === 0) {
     $('ul').append('<li>' + 'fizz' + '</li>');
+    $('#inputNumber').val('');
   } else if (newItem % 5 === 0) {
     $('ul').append('<li>' + 'buzz' + '</li>');
+    $('#inputNumber').val('');
   } 
     else {
         $('ul').append('<li>' + newItem + '</li>');   
